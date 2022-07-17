@@ -33,7 +33,7 @@ ppe = st.number_input('PPE')
 # detect
 if st.button('Detect'):
     model = joblib.load(
-        '/home/caleb/mlProject/parkinsons-disease/model/svm.pkl')
+        '/model/svm.pkl')
 
     F = pd.DataFrame([[FoHz, FhiHz, FloHz, jitterPer, jitterAbs,
                        rap, ppq, ddp, shimmer, shimmerDB,shimmerAPQ5, shimmerAPQ5, apq,

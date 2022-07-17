@@ -1,9 +1,8 @@
-import numpy as np
 import pandas as pd
 
 # loading the data from csv file to a Pandas DataFrame 
-parkinsons_data = pd.read_csv("/home/caleb/mlProject/parkinsons-disease/data/parkinsons.csv")
-save_data = '/home/caleb/mlProject/parkinsons-disease/data/processed_data.pkl'
+parkinsons_data = pd.read_csv("/data/parkinsons.csv")
+save_data = '/data/processed_data.pkl'
 
 # printing the first five rows of the dataframe
 parkinsons_data.head()

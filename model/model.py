@@ -5,8 +5,8 @@ from sklearn.metrics import accuracy_score
 import pandas as pd
 import pickle
 
-parkinsons_data = pd.read_pickle('/home/caleb/mlProject/parkinsons-disease/data/processed_data.pkl')
-save_data = '/home/caleb/mlProject/parkinsons-disease/model/svm.pkl'
+parkinsons_data = pd.read_pickle('/data/processed_data.pkl')
+save_data = '/model/svm.pkl'
 
 Y = parkinsons_data['status']
 X = parkinsons_data.drop(columns =['name', 'status'], axis = 1)
